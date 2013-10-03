@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FirstApp</title>
-  <%= stylesheet_link_tag    "application", media: "all"%>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>FirstApp</title>
+	<%= stylesheet_link_tag    "application", media: "all"%>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
-
+	<%= yield :menu%>
+	<div class='row-fluid'>
+		<div class='span3'>
+			<%= yield :sidebar%>
+		</div>
+		<div class='span9'>
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
