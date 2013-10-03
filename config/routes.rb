@@ -1,7 +1,6 @@
 FirstApp::Application.routes.draw do
 
-  root "welcome#index" 
+  root "welcome#index", :as => :index
 
-  get '/black', to: 'welcome#black', :as => :black
-
+  get '/black', to: 'welcome#black'
 end

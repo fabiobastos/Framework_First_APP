@@ -1,10 +1,17 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+group :production do
+	gem 'pg' 	
+end
 
-	gem 'pg'	
+group :development do
+	gem 'sqlite3' 	
+end
+
 
 
 # Use SCSS for stylesheets
@@ -45,3 +52,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'rails_12factor', group: :production
+
+group :test do 
+	gem 'capybara'
+	gem 'rspec-rails'
+	
+end
