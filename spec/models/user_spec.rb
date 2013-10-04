@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe User do 
 	it 'create an user' do  #Teste unitário
-		user = User.new :name => 'Francieli', :email => 'francielifrv@gmail.com', :age => '20'	
+		user = User.new :name => 'Francieli', :email => 'francielifrv@gmail.com', :age => '20', :gender => User::FEMALE	
 		user.save.should be_true
 	end
 
@@ -25,4 +25,36 @@ describe User do
 		user = User.new :name => 'Maria', :email => 'maria@gmail.com', :age => '20', :gender => User::FEMALE
 		user.save.should be_true
 	end
+
+
+	context "When age >= 18 " do 
+		it 'Creates user with gender value' do
+			user = User.new :name => 'Marta', :email => 'marta@gmail.com', :age => '23', :gender => User::FEMALE
+			user.save.should be_true
+		end
+
+		it 'Creates user without gender value'  do
+			user = User.new :name => 'Marta', :email => 'marta@gmail.com', :age => '23'
+			user.save.should be_false
+		end
+		
+	end
+
+	context "When age < 18" do 
+		it 'Creates user with gender value' do
+			user = User.new :name => 'Marta', :email => 'marta@gmail.com', :age => '12', :gender => User::FEMALE
+			user.save.should be_true
+		end
+
+		it 'Creates user without gender value'  do
+			user = User.new :name => 'Marta', :email => 'marta@gmail.com', :age => '12'
+			user.save.should be_true
+		end
+		
+	end
+
+
+
+
+
 end

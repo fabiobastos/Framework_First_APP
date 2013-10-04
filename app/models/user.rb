@@ -5,12 +5,16 @@ class User < ActiveRecord::Base
 	#Validations
 	validates :name, :presence => true, :allow_blank => false #validates_presence_of :name ...
 	validates :email, :presence => true, :allow_blank => false
+	validates :gender, :presence => true, :if => :adulthood
 
 	#Associations
 
 	#Scopes
 
 	#Public methods
+	def adulthood
+		self.age >= 18
+	end
 
 
 
