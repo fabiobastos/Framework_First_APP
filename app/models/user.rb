@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 	validates :name, :presence => true, :allow_blank => false #validates_presence_of :name ...
 	validates :email, :presence => true, :allow_blank => false
 	validates :gender, :presence => true, :if => :adulthood
+	validates :email, uniqueness: true
 
 	#Associations
 
