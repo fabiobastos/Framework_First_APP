@@ -5,4 +5,6 @@ describe '.about', type: :feature do
 		visit about_path
 		page.should have_content("Sobre")
 	end
+
+	
 end

@@ -12,4 +12,5 @@ describe ".index", :type => :feature do
 		page.should have_content 'Sobre'
 	end
 		
+	
 end

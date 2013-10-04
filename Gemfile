@@ -56,5 +56,5 @@ gem 'rails_12factor', group: :production
 group :test do 
 	gem 'capybara'
 	gem 'rspec-rails'
-	
+	gem 'shoulda'
 end
