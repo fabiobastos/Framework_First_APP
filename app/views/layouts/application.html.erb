@@ -7,9 +7,8 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-
-	<%= yield :menu%>
-	<div class='row-fluid'>
+	<div class='container'>
+		<div class='row-fluid'>
 		<div class='span3'>
 			<%= yield :sidebar%>
 		</div>
@@ -17,5 +16,10 @@
 			<%= yield %>
 		</div>
 	</div>
+
+	</div>
+
+	<%= yield :menu%>
+	
 </body>
 </html>

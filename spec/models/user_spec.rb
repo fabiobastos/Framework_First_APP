@@ -59,6 +59,4 @@ describe User do
 		user.save.should be_false
 	end
 
-
-
 end

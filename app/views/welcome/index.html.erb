@@ -3,6 +3,9 @@
 <h1> Conteúdo Central </h1>
 
 <%= link_to 'Saiba mais sobre nos', about_path %>
+<br/>
+
+<%= link_to 'Listar usuários', users_path, :class => 'btn btn-large' %>
 
 <%= content_for :sidebar do%>
     <%= render :partial => 'shared/sidebar' , locals: {:local_name => @name} %>
