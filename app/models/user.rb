@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 	validates :email, uniqueness: true
 
 	#Associations
-
+	has_many :bills, :dependent => :destroy
 	#Scopes
 
 	#Public methods
