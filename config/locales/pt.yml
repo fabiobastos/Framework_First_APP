@@ -1,0 +1,34 @@
+pt: 
+  hello: "Olá, Bom dia!"
+  no_bills: "Não há contas para este usário!"
+  new_bill: Nova conta
+  saved_successfully: "Conta salva com com sucesso"
+  error_while_saving: "Erro ao salvar."
+  save: "Salvar"
+
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+      only_day: "%d"
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: "[:day,:month,:year]"
+
+  time:
+    formats:
+      default: "A%, %d de %B de %Y, %H:%M hs"
+      default_short: "%A, %d de %B de %Y"
+      time: "%H:%M hs"
+      short: "%d/%m, %H:%M hs"
+      long: "%d de %B de %Y, %H:%M hs"
+      only_second: "%S"
+      day_month_name_year: "%A, %d de %B de %Y"
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+  am: ''
+  pm: ''
