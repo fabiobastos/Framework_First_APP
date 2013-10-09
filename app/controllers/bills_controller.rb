@@ -9,6 +9,16 @@ class BillsController < ApplicationController
     @bill = Bill.find(params[:id])
     @bill.destroy
   end
+
+  def edit
+    @bill = Bill.find(params[:id])
+  end
+
+  def update
+    @bill = Bill.find(params[:id])
+    flash[:notice] = ( @bill.update_attributes(bill_params)? t('updated_successfully') : t('error_while_updating') )
+  end
+
   private 
 
     def bill_params

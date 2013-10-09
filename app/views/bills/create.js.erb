@@ -1,4 +1,4 @@
-<% if @bill.persisted?%>
+<% if @bill.persisted? %>
   $("#bills").html("<%= j(render partial: 'bills/index', locals: {bills: @bill.user.bills} ) %>");
   $("#new_bill").html("<%= j(render partial: 'bills/new', locals: {bill: Bill.new, user: @bill.user} )%>");
   $("#bills").prepend("<%= j notice %>");
