@@ -58,3 +58,7 @@ group :test do
 	gem 'rspec-rails'
 	gem 'shoulda'
 end
+
+gem 'devise'
+
+gem 'mailcatcher'

@@ -1,6 +1,8 @@
 class WelcomeController < ApplicationController
 	#layout Applicatioon_black
 
+	before_filter :authenticate_user!, :except => [:index, :black, :about]
+
 	def index
 		@name = 'Francieli'
 	end

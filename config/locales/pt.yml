@@ -65,7 +65,6 @@ pt:
       bill:
         one: Conta
         other: Contas
-
     attributes:
       user:
         email: Email
