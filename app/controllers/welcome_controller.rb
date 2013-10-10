@@ -4,7 +4,8 @@ class WelcomeController < ApplicationController
 	before_filter :authenticate_user!, :except => [:index, :black, :about]
 
 	def index
-		@name = 'Francieli'
+		@name = 'Fábio Bastos'
+		#debugger
 	end
 	def black 
 		render :layout => "application_black" 
