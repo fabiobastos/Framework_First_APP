@@ -5,15 +5,7 @@
   </div>
   <div class="modal-body">
     
-    <%= form_for(comment, remote: true) do |f| %>
-      <%= render partial: "shared/error_messages", locals: {resource: comment} %>
-      <%= f.text_area :content, rows: "4", :style => "width:90%" %>
-      <%= f.hidden_field :commentable_type %>
-      <%= f.hidden_field :commentable_id %>
-      <br>
-      <%= f.submit "Salvar", class: "btn btn-success" %>
-
-    <% end %>
+    <%= render partial: "comments/form", locals: {comment: comment} %>
 
   </div>
   <div class="modal-footer">
