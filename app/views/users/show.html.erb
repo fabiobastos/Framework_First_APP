@@ -4,6 +4,11 @@
 <p> <b>  Email: </b> <%= @user.email%></p>
 <p> <b>  Idade: </b> <%= @user.age%></p>
 <p> <b>  Sexo: </b> <%= @user.gender%></p>
+<hr>
+<h4>Comentários</h4>
+<%= render partial: "comments/index", locals: {commentable: @user} %>
+<br>
+
 
 	<% bill = Bill.new %>
 	<%= div_for bill do %>
