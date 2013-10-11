@@ -14,6 +14,8 @@ class User < ActiveRecord::Base
 
 	#Associations
 	has_many :bills, :dependent => :destroy
+	has_many :comments, as: :commentable
+	
 	#Scopes
 
 	#Callbacks

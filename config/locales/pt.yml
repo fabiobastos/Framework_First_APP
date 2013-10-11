@@ -73,7 +73,8 @@ pt:
         current_password: Senha atual
         name: Nome
       bill:
-        name: Nome
+        user_id: Usuário
+        name: Nome da conta
         description: Descrição
         date: Data
         value: Valor

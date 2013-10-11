@@ -7,6 +7,8 @@
 
 <%= link_to 'Listar usuários', users_path, :class => 'btn btn-large' %>
 
+<%= link_to t('new_bill'), new_bill_path, class: "btn btn-large btn-inverse" %>
+
 <%= content_for :sidebar do%>
     <%= render :partial => 'shared/sidebar' , locals: {:local_name => @name} %>
 <% end %>
